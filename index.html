@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SearchPro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="logo">SearchPro</h1>
+
+    <div class="search-box">
+      <input
+        type="text"
+        placeholder="Search..."
+        id="searchInput"
+        oninput="filterSuggestions()"
+      />
+      <span class="clear-btn" onclick="clearSearch()">×</span>
+    </div>
+
+    <div class="suggestions" id="suggestionsBox"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
